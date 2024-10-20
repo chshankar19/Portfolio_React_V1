@@ -41,7 +41,7 @@ const Contact = () => {
         <Button
           className="resume-button"
           as="a"
-          href="/resume/ResumeOct.pdf"
+          href="./src/components/files/ResumeOct.pdf"
           download
         >
           Download My Resume
