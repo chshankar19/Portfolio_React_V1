@@ -1,0 +1,48 @@
+/* Updated Skills.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+.skills-container {
+  background-color: #0D1117; /* Dark background */
+  color: #F2F0EF; /* Off-white text color */
+  padding: 80px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1995AD; /* Teal color for title */
+  margin-bottom: 40px;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.category-title {
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: #A1D6E2; /* Light blue for category titles */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.skill-item {
+  font-weight: 300;
+  font-size: 1.08rem;
+  color: #F2F0EF;
+}
+
+@media (max-width: 768px) {
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

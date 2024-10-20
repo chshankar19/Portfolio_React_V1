@@ -1,0 +1,78 @@
+/* Updated Experience.css */
+.experience-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #5670ad, #8ebfde);
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.typing-heading {
+  color: #09203F;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.experience-box {
+  width: 414px; 
+  padding: 30px;
+  background: linear-gradient(to bottom, #A1C4FD, #C2E9FB);
+  border: 2px solid #537895;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-box:hover {
+  transform: scale(1.05); 
+  background: linear-gradient(to bottom, #537895, #A1C4FD); /* New hover gradient */
+}
+
+.experience-box:hover .experience-company,
+.experience-box:hover .experience-title,
+.experience-box:hover .experience-duration,
+.experience-box:hover p {
+  color: #E4EfE9; /* Soft light color for text on hover */
+}
+
+.experience-company {
+  color: #09203F;
+  margin-bottom: 10px;
+}
+
+.experience-title {
+  color: #537895;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experience-duration {
+  color: #537895;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .experience-boxes {
+    flex-direction: column; 
+  }
+
+  .experience-box {
+    width: 90%; 
+  }
+}

@@ -1,0 +1,123 @@
+/* Projects Section Styles */
+.projects-container {
+  background: linear-gradient(135deg, #6cc3eb, #994343); /* Adjusted gradient */
+  padding: 100px 20px; /* Increased padding for breathing room */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title Styling */
+.projects-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #C5001A, #002C54); /* Matching gradient with passion section */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Projects Content Layout */
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Increased gap for better spacing */
+  align-items: center;
+  width: 85%; /* Adjusted width for responsiveness */
+  max-width: 900px;
+}
+
+/* Individual Project Card Styling */
+.project-card {
+  background: linear-gradient(135deg, #59a4d2, #1D3557);
+  border-radius: 20px; /* Softer border radius */
+  padding: 30px; /* Increased padding for better layout */
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Enhanced shadow */
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  color: #F1FAEE;
+  text-align: left;
+}
+
+/* Hover Effect for Cards */
+.project-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #b1321b, #457B9D);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 2rem;
+  color: #185e84;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 1.2rem;
+  color: #aee2ef;
+  margin-bottom: 20px;
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Buttons for GitHub and Website Links */
+.project-links {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+}
+
+.project-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.project-button.github {
+  background-color: #333;
+  color: white;
+}
+
+.project-button.github:hover {
+  background-color: #444;
+}
+
+.project-button.website {
+  background-color: #007bff;
+  color: white;
+}
+
+.project-button.website:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .projects-content {
+      width: 100%;
+  }
+
+  .project-card {
+      text-align: center; /* Center content on smaller screens */
+  }
+
+  .project-title {
+      font-size: 1.8rem;
+  }
+
+  .project-description {
+      font-size: 1rem;
+  }
+}

@@ -1,0 +1,25 @@
+/* Updated Resume.css */
+.resume-section {
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px;
+  background-color: #F2F0EF; /* Off-white background for better contrast */
+  color: #245F73; /* Deep blue for text color */
+}
+
+.resume-title {
+  font-size: 3rem;
+  color: #733E24; /* Warm brown for title */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.resume-button {
+  background-color: #245F73; /* Deep blue for button */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #733E24; /* Warm brown on hover */
+}

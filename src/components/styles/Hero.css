@@ -1,0 +1,89 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #2292b7, #bb741e);
+  color: white;
+  text-align: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+@media (min-width: 769px) {
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+    padding: 40px;
+    align-items: center;
+  }
+}
+
+.hero-image {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.hero-text-container {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #2c7188, #9e5633); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.hero-typewriter {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #F2F0EF;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s step-end infinite;
+  color: #F2F0EF;
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: #BBBDBC;
+  margin-top: 20px;
+}
+
+.resume-button {
+  margin-top: 30px;
+  background-color: #245F73;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #733E24;
+}

@@ -1,0 +1,60 @@
+.passion-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1560a6, #bb152b);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 120px 40px; /* Adjusted padding */
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #C5001A, #002C54);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.passion-content {
+  display: flex;
+  gap: 80px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px; /* Additional margin to push components down */
+}
+
+.passion-item {
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.passion-item:hover {
+  transform: scale(1.1);
+}
+
+.passion-icon {
+  font-size: 4rem;
+  color: #FDF6F6;
+}
+
+.passion-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #115fa7, #bf1d33);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.passion-description {
+  font-size: 1.1rem;
+  color: #FDF6F6;
+  margin-top: 10px;
+}

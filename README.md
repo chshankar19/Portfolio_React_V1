@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+Gowri Shankar Chintala - Portfolio Website
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a developer. It includes interactive elements such as a typewriter animation and a resume download feature.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Demo
+You can view the live version of my portfolio here:
+Portfolio on Vercel
 
-## Available Scripts
+Features
+Responsive Design: Works seamlessly on desktop and mobile devices.
+Animated Typewriter: Displays rotating text with smooth animations.
+Interactive Contact Section: Includes rotating icons and email button.
+Resume Download Button: Easily download my latest resume.
+Social Links: Connect with me on GitHub, LinkedIn, Instagram, and X.
+Tech Stack
+Frontend Framework: React.js
+Styling: Chakra UI, CSS
+Animation: Framer Motion, Typewriter
+Deployment: Vercel
+Installation and Setup
+To run the portfolio app locally, follow these steps:
 
-In the project directory, you can run:
+1. Clone the Repository
+bash
+Copy code
+git clone https://github.com/your-username/react-portfolio.git
+cd react-portfolio
+2. Install Dependencies
+Make sure you have Node.js installed. Run the following command:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm install
+3. Start the Development Server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm start
+Open http://localhost:3000 to view the app in your browser.
 
-### `npm test`
+Deployment on Vercel
+This project is deployed and hosted on Vercel. Every time you push to the main branch on GitHub, Vercel will automatically re-deploy the latest version.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+How to Use
+Explore Projects: Browse my key projects in the Projects section.
+Download Resume: Grab a copy of my latest resume from the contact section.
+Get in Touch: Use the contact section to send me an email or connect via social media.
+Screenshots
 
-### `npm run build`
+Contributing
+This is a personal portfolio project, and contributions are not currently accepted. Feel free to fork the repository and use it for your own portfolio!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+License
+This project is licensed under the MIT License.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contact
+Feel free to reach out to me via email or any of the social media platforms linked in the contact section.
+Email: your-email@example.com
+GitHub: https://github.com/yourgithub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Acknowledgements
+React
+Chakra UI
+Framer Motion
+Vercel
+Save this content as README.md in the root directory of your project. Once added, commit and push it to GitHub:
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+git add README.md
+git commit -m "Added README.md"
+git push origin main
