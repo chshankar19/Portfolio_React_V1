@@ -11,7 +11,7 @@ const Hero = () => {
       'Doctor Strange',
       'Machine Learning Enthusiast',
       'Data Engineer',
-      'Software Developer'
+      'Software Developer',
     ],
     loop: true,
     typeSpeed: 100,
@@ -26,18 +26,12 @@ const Hero = () => {
         <Text as="h1" className="hero-title">
           <span className="highlight">Gowri Shankar Chintala</span>
         </Text>
-
         <Text as="p" className="hero-typewriter">
           {text}
           <span className="cursor">_</span>
         </Text>
-
         <Text as="p" className="hero-description">
-        I am a passionate Data Engineer with over two years of experience in building, optimizing, and automating data pipelines. 
-        Skilled in GCP, PySpark, SQL, Databricks, and React.js, I enjoy solving complex challenges by creating efficient and scalable solutions. 
-        Alongside data engineering, I have hands-on experience in web development and API integration using Node.js. 
-        Currently pursuing a Master’s in Computer Science at Texas A&M University-Commerce, 
-        I am committed to continuous learning and aspire to develop impactful software solutions through innovation and technical expertise.
+        I am a Passionate Data Engineer with over two years of experience in building, optimizing, and automating data pipelines. Skilled in GCP, PySpark, SQL, Databricks, and React.js, I enjoy solving complex challenges by creating efficient and scalable solutions. Alongside data engineering, I have hands-on experience in web development and API integration using Node.js. Currently pursuing a Master’s in Computer Science at Texas A&M University-Commerce, I am committed to continuous learning and aspire to develop impactful software solutions through innovation and technical expertise.
         </Text>
       </Flex>
     </Box>
