@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import { motion, useAnimation } from 'framer-motion';
 import './styles/Skills.css';
@@ -6,18 +6,17 @@ import './styles/Skills.css';
 const skillCategories = {
   Methodologies: ['SDLC', 'Agile', 'Waterfall', 'Scrum'],
   'Programming Languages': [
-    'Python', 'R programming', 'C programming', 'C++', 'C#', 'Java', 'Go', 'SQL', 'JavaScript',
+    'Python', 'C programming', 'C++', 'Java', 'SQL', 'JavaScript', 'CSS', 'HTML'
   ],
-  Database: ['MySQL', 'PySparkSQL', 'MongoDB'],
+  Database: ['MySQL', 'PySparkSQL', 'MongoDB', 'Oracle DB'],
   'Libraries & Frameworks': [
-    'PySpark', 'Node.js', 'React.js', 'Flask', 'NumPy', 'Hadoop', 'Vs Code', 
-    'Angular', 'Pandas', 'Spring Boot', 'Rest API',
+    'PySpark', 'React.js', 'Flask', 'NumPy', 'Hadoop', 
+    'Angular', 'Pandas', 'Rest API',
   ],
   'Tools & Technologies': [
-    'CSS', 'HTML', 'Postman', 'GCP', 'Kubernetes', 'Docker', 'LLM’s', 'Kafka', 'Jira', 
-    'Git', 'Databricks', 'PowerBI', 'VM', 'Oracle DB',
+    'Postman', 'GCP', 'Kubernetes', 'Docker', 'LLM’s', 'Kafka', 'Jira', 
+    'Git', 'Databricks', 'PowerBI'
   ],
-  'Operating Systems': ['Linux', 'Ubuntu', 'Windows', 'MacOs'],
 };
 
 const MotionVStack = motion(VStack);
@@ -25,15 +24,15 @@ const MotionText = motion(Text);
 
 const Skills = () => {
   const sectionRef = useRef(null);
-  const controls = useAnimation(); // Control animations
+  const controls = useAnimation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          controls.start('visible'); // Start animation when in view
+          controls.start('visible');
         } else {
-          controls.start('hidden'); // Reset animation when out of view
+          controls.start('hidden');
         }
       },
       { threshold: 0.2 }
@@ -47,7 +46,7 @@ const Skills = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.15, // Staggered animation
+        staggerChildren: 0.15,
         delayChildren: 0.2,
       },
     },
@@ -65,11 +64,11 @@ const Skills = () => {
         {Object.entries(skillCategories).map(([category, skills], index) => (
           <MotionVStack
             key={index}
-            align="start"
+            align="center" // Center-align skills under headings
             spacing={5}
             initial="hidden"
             animate={controls}
-            variants={containerVariants} // Stagger animation for children
+            variants={containerVariants}
           >
             <MotionText className="category-title" variants={itemVariants}>
               {category}
