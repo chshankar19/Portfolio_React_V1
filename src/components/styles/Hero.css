@@ -50,7 +50,7 @@
 .hero-title {
   font-size: 3rem; /* Adjusted for better scaling */
   font-weight: bold;
-  background: linear-gradient(90deg, #2c7188, #9e5633); 
+  background: linear-gradient(90deg, #2c7188, #af6038); 
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,7 +84,7 @@
 
 .hero-description {
   font-size: 1.2rem;
-  color: #BBBDBC;
+  color: #d5e4eb;
   margin-top: 20px;
 }
 

@@ -8,8 +8,10 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       'Full Stack Developer',
+      'Doctor Strange',
       'Machine Learning Enthusiast',
       'Data Engineer',
+      'Software Developer'
     ],
     loop: true,
     typeSpeed: 100,
@@ -22,7 +24,7 @@ const Hero = () => {
       <Image className="hero-image" src={ProfilePic} alt="Gowri Shankar" />
       <Flex className="hero-text-container" direction="column" gap={6}>
         <Text as="h1" className="hero-title">
-          Hello, I'm <span className="highlight">Gowri Shankar Chintala</span>
+          <span className="highlight">Gowri Shankar Chintala</span>
         </Text>
 
         <Text as="p" className="hero-typewriter">
@@ -31,9 +33,11 @@ const Hero = () => {
         </Text>
 
         <Text as="p" className="hero-description">
-          Passionate Data Engineer with over 2 years of experience in building
-          data solutions and web development. Skilled in GCP, PySpark, SQL, and
-          full-stack technologies, including React and API.
+        I am a passionate Data Engineer with over two years of experience in building, optimizing, and automating data pipelines. 
+        Skilled in GCP, PySpark, SQL, Databricks, and React.js, I enjoy solving complex challenges by creating efficient and scalable solutions. 
+        Alongside data engineering, I have hands-on experience in web development and API integration using Node.js. 
+        Currently pursuing a Master’s in Computer Science at Texas A&M University-Commerce, 
+        I am committed to continuous learning and aspire to develop impactful software solutions through innovation and technical expertise.
         </Text>
       </Flex>
     </Box>

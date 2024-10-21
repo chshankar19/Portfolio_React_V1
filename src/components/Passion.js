@@ -47,19 +47,19 @@ const Passion = () => {
       icon: FaPaintBrush,
       title: 'Design',
       description:
-        'Design isn’t just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.',
+        'Design goes beyond the appearance and feel of a product; it encompasses its internal functionality and overall user experience. I aim to create interfaces and experiences that are engaging and enjoyable across all digital platforms.',
     },
     {
       icon: FaLaptopCode,
       title: 'Development',
       description:
-        'With a strong foundation in computer science, I’m passionate about web design and development, and interested in mobile app development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.',
+        'With a solid foundation in computer science, I’m passionate about web design and development, with a growing interest in mobile app development. As I advance as a developer, my goal is to write clean, readable code that others can use and build upon to create elegant, impactful software.',
     },
     {
       icon: FaLightbulb,
       title: 'Involvement',
       description:
-        'I’m a final-year graduate and have worked on many projects. Check out my GitHub. I can manage both academics and personal interests at the same time. I never neglect my duties as I maintain constant enthusiasm for my hobbies.',
+        'I’m a final-year graduate with experience in multiple projects. Explore my work on GitHub! I excel at balancing academics with personal interests, ensuring neither is compromised. My dedication to responsibilities remains unwavering, fueled by my passion for hobbies.',
     },
   ];
 
