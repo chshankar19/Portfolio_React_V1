@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Flex, IconButton, Button, useDisclosure } from '@chakra-ui/react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Flex, IconButton, Button, Box } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import './styles/Navbar.css';
 
 const Navbar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const Links = ['home', 'passion', 'experience', 'skills', 'projects', 'contact'];
+  const Links = useMemo(() => ['home', 'passion', 'experience', 'skills', 'projects', 'contact'], []);
 
-  const [navbarClass, setNavbarClass] = useState('navbar-gradient'); // Default to gradient
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Track menu state
+  const [navbarClass, setNavbarClass] = useState('navbar-gradient'); // Default class
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev); // Toggle menu
 
   const handleScroll = (id) => {
     const section = document.getElementById(id);
@@ -15,9 +17,10 @@ const Navbar = () => {
 
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - navbarHeight, // Adjust for navbar height
+        top: section.offsetTop - navbarHeight,
         behavior: 'smooth',
       });
+      setIsMenuOpen(false); // Close menu after clicking link on mobile
     }
   };
 
@@ -40,7 +43,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.5 } // Adjust sensitivity
+      { threshold: 0.3 }
     );
 
     Links.forEach((link) => {
@@ -48,41 +51,48 @@ const Navbar = () => {
       if (section) observer.observe(section);
     });
 
-    return () => observer.disconnect(); // Cleanup observer on unmount
+    return () => observer.disconnect(); // Cleanup observer
   }, [Links]);
 
   return (
-    <Flex className={`navbar ${navbarClass}`}>
+    <Flex className={`navbar ${navbarClass}`} as="nav">
+      {/* Hamburger button (visible only on mobile) */}
       <IconButton
         size="md"
-        icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-        aria-label="Open Menu"
+        icon={isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
+        aria-label="Toggle Menu"
         display={{ base: 'inline-flex', md: 'none' }}
-        onClick={isOpen ? onClose : onOpen}
+        onClick={toggleMenu}
         bg="transparent"
         _hover={{ bg: 'teal.600' }}
       />
-      <Flex
-        className="navbar-links"
-        display={{ base: isOpen ? 'flex' : 'none', md: 'flex' }}
-        direction={{ base: 'column', md: 'row' }}
+
+      {/* Navbar links */}
+      <Box
+        className={`navbar-links ${isMenuOpen ? 'open' : 'closed'}`}
+        display={{ base: isMenuOpen ? 'flex' : 'none', md: 'flex' }} // Always show on desktop
+        flexDirection={{ base: 'column', md: 'row' }}
+        alignItems="center"
+        justifyContent={{ base: 'flex-start', md: 'flex-end' }}
         position={{ base: 'absolute', md: 'static' }}
         top={{ base: '60px', md: 'auto' }}
+        right={{ base: '0', md: '2rem' }}
+        width={{ base: '100%', md: 'auto' }}
+        bg={{ base: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1))', md: 'transparent' }}
+        zIndex="1000"
       >
         {Links.map((link) => (
           <Button
             key={link}
-            onClick={() => {
-              handleScroll(link);
-              onClose();
-            }}
+            onClick={() => handleScroll(link)}
             variant="ghost"
-            className="navbar-link"
+            className={`navbar-link ${isMenuOpen ? 'mobile-menu-open' : ''}`} // Add class when menu is open
+            _hover={{ bg: 'white', color: 'teal' }}
           >
             {link.charAt(0).toUpperCase() + link.slice(1)}
           </Button>
         ))}
-      </Flex>
+      </Box>
     </Flex>
   );
 };

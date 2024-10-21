@@ -11,6 +11,7 @@
   gap: 20px;
 }
 
+/* For larger screens */
 @media (min-width: 769px) {
   .hero-container {
     flex-direction: row;
@@ -20,13 +21,26 @@
   }
 }
 
+/* Image styling for all screens */
 .hero-image {
   border-radius: 50%;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px; /* Reduced size for better layout */
   height: auto;
-  margin-right: 40px;
+  margin-bottom: 20px; /* Ensure spacing on smaller screens */
   flex-shrink: 0;
+}
+
+/* Center image and content on smaller screens */
+@media (max-width: 768px) {
+  .hero-image {
+    max-width: 200px; /* Smaller size for mobile */
+  }
+
+  .hero-text-container {
+    align-items: center; /* Center text on mobile */
+    text-align: center;
+  }
 }
 
 .hero-text-container {
@@ -34,7 +48,7 @@
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3rem; /* Adjusted for better scaling */
   font-weight: bold;
   background: linear-gradient(90deg, #2c7188, #9e5633); 
   background-clip: text;
@@ -44,7 +58,7 @@
 }
 
 .hero-typewriter {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #F2F0EF;
   margin-bottom: 20px;
@@ -58,7 +72,6 @@
   color: #F2F0EF;
 }
 
-/* Blinking cursor animation */
 @keyframes blink {
   from,
   to {
@@ -70,7 +83,7 @@
 }
 
 .hero-description {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #BBBDBC;
   margin-top: 20px;
 }

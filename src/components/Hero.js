@@ -9,12 +9,12 @@ const Hero = () => {
     words: [
       'Full Stack Developer',
       'Machine Learning Enthusiast',
-      'Data Engineer'
+      'Data Engineer',
     ],
-    loop: true, // Infinite loop to cycle through words
-    typeSpeed: 100, // Smooth typing speed
-    deleteSpeed: 50, // Smooth deletion speed
-    delaySpeed: 1500, // Delay between word transitions
+    loop: true,
+    typeSpeed: 100,
+    deleteSpeed: 50,
+    delaySpeed: 1500,
   });
 
   return (
@@ -25,15 +25,15 @@ const Hero = () => {
           Hello, I'm <span className="highlight">Gowri Shankar Chintala</span>
         </Text>
 
-        {/* Display the typed text with the cursor */}
         <Text as="p" className="hero-typewriter">
           {text}
           <span className="cursor">_</span>
         </Text>
 
         <Text as="p" className="hero-description">
-          Passionate Data Engineer with over 2 years of experience in building data solutions and web development.
-          Skilled in GCP, PySpark, SQL, and full-stack technologies, including React and Spring Boot.
+          Passionate Data Engineer with over 2 years of experience in building
+          data solutions and web development. Skilled in GCP, PySpark, SQL, and
+          full-stack technologies, including React and API.
         </Text>
       </Flex>
     </Box>
