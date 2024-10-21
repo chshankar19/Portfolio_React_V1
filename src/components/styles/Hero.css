@@ -10,6 +10,8 @@
   padding: 40px;
   gap: 20px;
   position: relative;
+  overflow:hidden;
+  width: 100%;
   /* margin-bottom: 60px; Ensures space between Hero and next section */
 }
 

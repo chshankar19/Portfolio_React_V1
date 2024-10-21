@@ -1,7 +1,8 @@
-/* Updated Experience.css */
+/* Ensure no overflow in the experience container */
 .experience-container {
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
   background: linear-gradient(to right, #5670ad, #8ebfde);
   padding: 40px 20px;
   box-sizing: border-box;
@@ -23,10 +24,14 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 40px;
+  width: 100%; /* Ensure no extra width is added */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 0 10px; /* Add padding to avoid edge overflow */
 }
 
 .experience-box {
-  width: 414px; 
+  width: 414px;
+  max-width: 90%; /* Ensure the box adapts to smaller screens */
   padding: 30px;
   background: linear-gradient(to bottom, #A1C4FD, #C2E9FB);
   border: 2px solid #537895;
@@ -40,15 +45,15 @@
 }
 
 .experience-box:hover {
-  transform: scale(1.05); 
-  background: linear-gradient(to bottom, #537895, #A1C4FD); /* New hover gradient */
+  transform: scale(1.05);
+  background: linear-gradient(to bottom, #537895, #A1C4FD);
 }
 
 .experience-box:hover .experience-company,
 .experience-box:hover .experience-title,
 .experience-box:hover .experience-duration,
 .experience-box:hover p {
-  color: #E4EfE9; /* Soft light color for text on hover */
+  color: #E4EfE9;
 }
 
 .experience-company {
@@ -69,10 +74,12 @@
 
 @media (max-width: 768px) {
   .experience-boxes {
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center; /* Center align on smaller screens */
   }
 
   .experience-box {
-    width: 90%; 
+    width: 90%; /* Adapt to screen size */
+    margin-bottom: 20px;
   }
 }

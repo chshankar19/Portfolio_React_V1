@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import { motion, useAnimation } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
@@ -32,15 +32,15 @@ const experiences = [
 
 const Experience = () => {
   const sectionRef = useRef(null);
-  const controls = useAnimation(); // Animation controls
+  const controls = useAnimation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          controls.start('visible'); // Start animation on scroll
+          controls.start('visible');
         } else {
-          controls.start('hidden'); // Reset when out of view
+          controls.start('hidden');
         }
       },
       { threshold: 0.2 }
@@ -59,7 +59,7 @@ const Experience = () => {
         type: 'spring',
         stiffness: 80,
         damping: 12,
-        delay: index * 0.2, // Delay each box by 0.2s
+        delay: index * 0.2,
       },
     },
   });
