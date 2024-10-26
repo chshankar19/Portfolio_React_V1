@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+/* Ensure Poppins is applied globally */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .passion-section {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1560a6, #bb152b);
+  background: #0c0c0c;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 120px 40px; /* Adjusted padding */
+  padding: 120px 40px;
 }
 
 .section-title {
   font-size: 3rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #C5001A, #002C54);
+  /* font-weight: bold; */
+  background: #BAB0D4;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,7 +32,7 @@
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 50px; /* Additional margin to push components down */
+  margin-top: 50px;
 }
 
 .passion-item {
@@ -40,14 +47,14 @@
 
 .passion-icon {
   font-size: 4rem;
-  color: #FDF6F6;
+  color: #dbc7c7;
 }
 
 .passion-title {
   font-size: 1.75rem;
   font-weight: bold;
   margin-top: 10px;
-  background: linear-gradient(90deg, #115fa7, #bf1d33);
+  background: #7d768f;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,6 +62,6 @@
 
 .passion-description {
   font-size: 1.1rem;
-  color: #FDF6F6;
+  color: #dee2e9;
   margin-top: 10px;
 }

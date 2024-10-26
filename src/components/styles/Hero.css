@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Allows content to expand without overflow */
-  background: linear-gradient(to right, #2292b7, #bb741e);
+  /* background: linear-gradient(to right, #2292b7, #bb741e); */
+  background: #0c0c0c;
   color: white;
   text-align: center;
   padding: 40px;
@@ -33,6 +34,7 @@
   height: auto;
   margin-bottom: 20px;
   flex-shrink: 0;
+  opacity: 75%;
   z-index: 1;
 }
 
@@ -57,7 +59,8 @@
 .hero-title {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #2c7188, #af6038);
+  /* background: linear-gradient(90deg, #2c7188, #af6038); */
+  background: #CCD0CF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,7 +70,8 @@
 .hero-typewriter {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #F2F0EF;
+  /* color: #F2F0EF; */
+  color: #9BA8AB;
   margin-bottom: 20px;
   white-space: nowrap;
   overflow: hidden;

@@ -14,32 +14,35 @@
 
 /* Navbar colors for different sections */
 .navbar-home {
-  background: linear-gradient(90deg, #25afdd 0%, #db7846 100%);
+  /* background: linear-gradient(90deg, #25afdd 0%, #db7846 100%);*/
+  background: linear-gradient(90deg, #253745, #c3d7d7);
   color: white;
 }
 
 .navbar-passion {
-  background: linear-gradient(90deg, #4a8cca, #db122d);
+  /* background: linear-gradient(90deg, #4a8cca, #db122d); */
+  background: linear-gradient(90deg, #4d475b, #c3bbd6);
   color: white;
 }
 
 .navbar-experience {
-  background: linear-gradient(90deg, #1e5fa1 0%, #afc4da 100%);
+  background: linear-gradient(90deg, #184f85 0%, #afc4da 100%);
   color: white;
 }
 
 .navbar-skills {
-  background: linear-gradient(90deg, #128298, #a3cfe0);
+  background: linear-gradient(90deg, #0b4d5a, #a3cfe0);
   color: #E4F1E9;
 }
 
 .navbar-projects {
-  background: linear-gradient(90deg, #cd6958, #457B9D);
+  /* background: linear-gradient(90deg, #cd6958, #457B9D); */
+  background: linear-gradient(90deg, #2a5572, #b4cbdd);
   color: white;
 }
 
 .navbar-contact {
-  background: linear-gradient(90deg, #032e57, #33daec);
+  background: linear-gradient(90deg, #06529a, #9bbcdb);
   color: white;
 }
 
@@ -82,7 +85,7 @@
 
 .navbar-link:hover {
   background-color: rgba(255, 255, 255, 0.8);
-  color: teal;
+  color: rgba(0, 128, 128, 0.366);
   border-radius: 8px;
   padding: 0.5rem 1rem;
 }

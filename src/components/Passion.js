@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Box, Flex, VStack, Icon, Text } from '@chakra-ui/react';
 import { FaLaptopCode, FaLightbulb, FaPaintBrush } from 'react-icons/fa';
 import { motion, useAnimation } from 'framer-motion';
-import { Typewriter } from 'react-simple-typewriter'; // Import typewriter effect
+// import { Typewriter } from 'react-simple-typewriter'; // Import typewriter effect
 import './styles/Passion.css';
 
 const MotionVStack = motion(VStack);
@@ -66,15 +66,16 @@ const Passion = () => {
   return (
     <Box id="passion" ref={sectionRef} className="passion-section">
       <Text className="section-title">
-        <Typewriter
-          words={['What I Do..']} // Typewriter effect for heading
+        {/* <Typewriter
+          words={['What I do..']} // Typewriter effect for heading
           loop={false}
           cursor
           cursorStyle="_"
           typeSpeed={80}
           deleteSpeed={50}
           delaySpeed={1000}
-        />
+        /> */}
+        What I do..
       </Text>
       <Flex className="passion-content" wrap="wrap" justify="space-around" align="center">
         {passionItems.map((item, index) => (

@@ -68,6 +68,20 @@ const Navbar = () => {
       />
 
       {/* Navbar links */}
+      {/* <Box
+        className={`navbar-links ${isMenuOpen ? 'open' : 'closed'}`}
+        display={{ base: isMenuOpen ? 'flex' : 'none', md: 'flex' }} // Always show on desktop
+        flexDirection={{ base: 'column', md: 'row' }}
+        alignItems="center"
+        justifyContent={{ base: 'flex-start', md: 'flex-end' }}
+        position={{ base: 'absolute', md: 'static' }}
+        top={{ base: '60px', md: 'auto' }}
+        right={{ base: '0', md: '2rem' }}
+        width={{ base: '100%', md: 'auto' }}
+        bg={{ base: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1))', md: 'transparent' }}
+        zIndex="1000"
+      > */}
+      {/* Navbar links */}
       <Box
         className={`navbar-links ${isMenuOpen ? 'open' : 'closed'}`}
         display={{ base: isMenuOpen ? 'flex' : 'none', md: 'flex' }} // Always show on desktop
@@ -80,7 +94,9 @@ const Navbar = () => {
         width={{ base: '100%', md: 'auto' }}
         bg={{ base: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1))', md: 'transparent' }}
         zIndex="1000"
+        boxShadow={{ base: '0 4px 15px rgba(255, 255, 255, 0.4)', md: 'none' }} // White shadow effect
       >
+      
         {Links.map((link) => (
           <Button
             key={link}

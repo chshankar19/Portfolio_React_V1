@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
 .skills-container {
-  background-color: #0D1117; /* Dark background */
+  /* background-color: #0D1117; */
+  background: #0c0c0c;
   color: #F2F0EF; /* Off-white text color */
   padding: 80px;
   min-height: 100vh;

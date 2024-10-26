@@ -1,6 +1,6 @@
-/* Projects Section Styles */
 .projects-container {
-  background: linear-gradient(135deg, #6cc3eb, #994343); /* Adjusted gradient */
+  /* background: linear-gradient(135deg, #6cc3eb, #994343); */
+  background: #0c0c0c;
   padding: 100px 20px; /* Increased padding for breathing room */
   min-height: 100vh;
   display: flex;
@@ -15,7 +15,8 @@
   font-size: 3rem;
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(90deg, #C5001A, #002C54); /* Matching gradient with passion section */
+  /* background: linear-gradient(90deg, #C5001A, #002C54); */
+  background: #bfc7ce;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -33,26 +34,28 @@
 
 /* Individual Project Card Styling */
 .project-card {
-  background: linear-gradient(135deg, #59a4d2, #1D3557);
+  /* background: linear-gradient(135deg, #59a4d2, #1D3557); */
+  background: #6991b0;
   border-radius: 20px; /* Softer border radius */
   padding: 30px; /* Increased padding for better layout */
   width: 100%;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Enhanced shadow */
   transition: transform 0.4s ease, background-color 0.4s ease;
-  color: #F1FAEE;
+  /* color: #afb3b7; */
   text-align: left;
 }
 
 /* Hover Effect for Cards */
 .project-card:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #b1321b, #457B9D);
+  transform: scale(1.0);
+  /* background: linear-gradient(135deg, #b1321b, #457B9D); */
+  background: #193547
 }
 
 /* Project Title */
 .project-title {
   font-size: 2rem;
-  color: #185e84;
+  color: #4183af;
   font-weight: bold;
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
@@ -61,7 +64,7 @@
 /* Project Description */
 .project-description {
   font-size: 1.2rem;
-  color: #aee2ef;
+  color: #eaeff3;
   margin-bottom: 20px;
   line-height: 1.6; /* Improved readability */
 }
@@ -95,12 +98,12 @@
 }
 
 .project-button.website {
-  background-color: #007bff;
+  background-color: #2d4a53;
   color: white;
 }
 
 .project-button.website:hover {
-  background-color: #0056b3;
+  background-color: #Afb3b7;
 }
 
 /* Responsive Adjustments */
