@@ -7,10 +7,9 @@ import ProfilePic from './images/PassportPicture.jpg';
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
-      'Full Stack Developer',
-      'Doctor Strange',
-      'Machine Learning Enthusiast',
       'Data Engineer',
+      'Full Stack Developer',
+      'Machine Learning Enthusiast',
       'Software Developer',
     ],
     loop: true,
